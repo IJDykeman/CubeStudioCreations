@@ -1,0 +1,117 @@
+C:\Users\Public\CubeStudio\bayouTree\base.vox 0 0 0 rigid 0 0 0 1 0.99
+[
+C:\Users\Public\CubeStudio\bayouTree\trunkSection.vox 10.5 12 11 rigid 0 0 0 1 1.19
+[
+C:\Users\Public\CubeStudio\bayouTree\trunkSection.vox 5.5 9 5.5 rigid 0 -0.09983341 0 0.9950042 0.89
+[
+C:\Users\Public\CubeStudio\bayouTree\trunkSection.vox 5.5 9 4.5 rigid 0.00498959 -0.09970864 -0.04972948 0.9937607 0.89
+[
+C:\Users\Public\CubeStudio\bayouTree\trunkSection.vox 5 9 4.5 rigid 0.004989591 -0.09970865 -0.04972948 0.9937607 0.89
+[
+C:\Users\Public\CubeStudio\bayouTree\trunkSection.vox 5.5 9 5 rigid -0.002497917 -0.04991671 0.04991671 0.9975021 0.89
+[
+C:\Users\Public\CubeStudio\bayouTree\trunkSection.vox 5.5 9 5.5 rigid -0.004989591 -0.09970865 0.04972948 0.9937607 0.89
+[
+C:\Users\Public\CubeStudio\bayouTree\trunkSection.vox 5.5 9 5.5 rigid -0.002497917 -0.04991671 0.04991671 0.9975021 0.89
+[
+C:\Users\Public\CubeStudio\bayouTree\trunkSection.vox 5.5 9 5.5 rigid -0.002497917 -0.04991671 0.04991671 0.9975021 0.89
+[
+C:\Users\Public\CubeStudio\bayouTree\trunkSection.vox 5.5 9 5.5 rigid -0.002497917 -0.04991671 0.04991671 0.9975021 0.89
+[
+C:\Users\Public\CubeStudio\bayouTree\longerBranchSection.vox 3.5 7.5 3.5 rigid 0 0 0.3428978 0.9393727 0.5899999
+[
+C:\Users\Public\CubeStudio\bayouTree\leafBunch1.vox 9.5 18.5 9.5 rigid 0 0 0.9127641 0.4084875 2.989999
+[
+C:\Users\Public\CubeStudio\bayouTree\spanishMoss2.vox 24.5 17.5 20.5 rigid 0 0 0.9974952 0.07073721 0.89
+[
+]
+]
+]
+C:\Users\Public\CubeStudio\bayouTree\trunkCap.vox 5.5 8.5 5.5 rigid 0 0 0.04997917 0.9987503 0.99
+[
+C:\Users\Public\CubeStudio\bayouTree\branchSection.vox 12.5 18 10 rigid 0 0 -0.4349656 0.9004471 0.79
+[
+C:\Users\Public\CubeStudio\bayouTree\branchSection.vox 6 12 6.5 rigid 0.1693836 0.3506506 -0.4006298 0.8293667 0.79
+[
+C:\Users\Public\CubeStudio\bayouTree\leafBunch2.vox 6.5 12.5 6.5 rigid 0.8090329 0.4960222 0.2368955 0.2081076 2.59
+[
+C:\Users\Public\CubeStudio\bayouTree\spanishMoss3.vox 25.5 19.5 19.5 rigid -0.01286299 -0.09900131 -0.9867109 -0.1282008 0.99
+[
+]
+]
+]
+]
+C:\Users\Public\CubeStudio\bayouTree\leafBunch2.vox 9.5 16.5 13.5 rigid -0.09604658 -0.682465 -0.2539874 0.6786074 1.49
+[
+]
+C:\Users\Public\CubeStudio\bayouTree\longerBranchSection.vox 10.5 19.5 10.5 rigid -0.3693808 -0.1753944 0.03301692 0.9119785 0.99
+[
+C:\Users\Public\CubeStudio\bayouTree\longerBranchSection.vox 9.5 18.5 9.5 rigid -0.01491892 -0.09871239 0.1486916 0.9838314 0.79
+[
+C:\Users\Public\CubeStudio\bayouTree\spanishMoss3.vox 8.5 18.5 9.5 rigid 0.06242632 -0.1520338 -0.5618685 0.8107361 1.29
+[
+]
+]
+]
+]
+]
+]
+C:\Users\Public\CubeStudio\bayouTree\spanishMoss.vox 0.5 7.5 1.5 rigid -0.0008955434 -0.4715033 -0.09961424 0.8762199 0.99
+[
+]
+]
+C:\Users\Public\CubeStudio\bayouTree\branchSection.vox 7.5 8 9 rigid 0.4262952 0.08641431 -0.1788912 0.8824981 1.39
+[
+C:\Users\Public\CubeStudio\bayouTree\branchSection.vox 6.5 12.5 6.5 rigid 0.05450182 0.1118873 0.04320017 0.9912845 0.79
+[
+C:\Users\Public\CubeStudio\bayouTree\branchSection.vox 6.5 12.5 6.5 rigid 0.09933467 -0.09784339 0.01983384 0.9900334 0.79
+[
+C:\Users\Public\CubeStudio\bayouTree\longerBranchSection.vox 6.5 12.5 6.5 rigid 0.1539617 0.09163016 0.2385873 0.9544506 0.69
+[
+C:\Users\Public\CubeStudio\bayouTree\longerBranchSection.vox 9.5 18.5 9.5 rigid 0.09933466 -0.09933466 0.009966711 0.9900333 0.6899999
+[
+C:\Users\Public\CubeStudio\bayouTree\longerBranchSection.vox 9.5 18.5 9.5 rigid 0.1486916 0.01491892 0.09871239 0.9838314 0.6899999
+[
+C:\Users\Public\CubeStudio\bayouTree\leafBunch1.vox 9.5 18.5 8.5 rigid 0.442515 0.508284 0.5958186 0.436839 3.889998
+[
+]
+C:\Users\Public\CubeStudio\bayouTree\spanishMoss3.vox 10 11 15.5 rigid -0.8123991 -0.04065386 0.08692567 0.5751516 3.689999
+[
+]
+]
+]
+]
+C:\Users\Public\CubeStudio\bayouTree\longerBranchSection.vox 7.5 11 6.5 rigid -3.293598E-10 -9.347626E-11 -0.3428978 0.9393727 0.69
+[
+C:\Users\Public\CubeStudio\bayouTree\longerBranchSection.vox 9.5 18.5 8.5 rigid 0.2578589 -0.1196473 0.1324306 0.9495555 0.6899999
+[
+C:\Users\Public\CubeStudio\bayouTree\leafBunch1.vox 9.5 18.5 9.5 rigid 0.6800116 0.5363401 0.4341278 0.2479064 2.59
+[
+C:\Users\Public\CubeStudio\bayouTree\spanishMoss.vox 17.5 18.5 17.5 rigid 0.3669342 -0.1494029 0.901319 0.1751081 0.99
+[
+]
+]
+]
+]
+]
+C:\Users\Public\CubeStudio\bayouTree\spanishMoss.vox 6.5 12.5 8.5 rigid -0.4736606 -0.1387699 0.06401894 0.8673469 0.99
+[
+]
+]
+C:\Users\Public\CubeStudio\bayouTree\spanishMoss2.vox 6.5 9.5 8.5 rigid -0.4410745 0.229139 -0.002568706 0.8677226 0.99
+[
+]
+]
+]
+C:\Users\Public\CubeStudio\bayouTree\flatSidedSpanishMoss.vox 8.5 6.5 4.5 rigid 0.01713775 0.3424693 0.04694907 0.9381987 0.99
+[
+]
+]
+C:\Users\Public\CubeStudio\bayouTree\flatSidedSpanishMoss.vox 11 7.5 8 rigid 0 0 0.09983341 0.9950042 0.6899999
+[
+]
+]
+]
+]
+]
+]

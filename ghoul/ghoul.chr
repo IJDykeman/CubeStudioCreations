@@ -1,0 +1,33 @@
+C:\Users\Public\CubeStudio\ghoul\body.vox 0 -0.1 0 torso -2.460185E-09 0.9995746 -1.168895E-10 -0.02919958 0.07
+[
+C:\Users\Public\CubeStudio\ghoul\head.vox 17.5 25 18.5 head 0 0 0 1 0.4899999
+[
+]
+C:\Users\Public\CubeStudio\ghoul\upperLeftLeg.vox 16 17.5 18.5 leftLeg 0 0.9995738 0 -0.02919954 0.6899999
+[
+C:\Users\Public\CubeStudio\ghoul\lowerLeftLeg.vox 9 0.5 9.5 lowerRightLeg 0 0 0 1 0.7899999
+[
+]
+]
+C:\Users\Public\CubeStudio\ghoul\upperRightArm.vox 12.5 24.5 18 leftArm 0 0 0 1 0.4899999
+[
+C:\Users\Public\CubeStudio\ghoul\lowerRightArm.vox 0.5 9.5 10.5 lowerRightArm 0.1986693 0 0 0.9800666 0.79
+[
+C:\Users\Public\CubeStudio\ghoul\ghoulSword.vox 2 13.5 17 rigid 0 0 0 1 0.99
+[
+]
+]
+]
+C:\Users\Public\CubeStudio\ghoul\upperLeftArm.vox 22.5 23.5 17.5 rightArm 0 0 0 1 0.5899999
+[
+C:\Users\Public\CubeStudio\ghoul\lowerLeftArm.vox 16.5 9.5 10.5 lowerLeftArm 0 0 0 1 0.99
+[
+]
+]
+C:\Users\Public\CubeStudio\ghoul\upperLeftLeg.vox 20 17 18 rightLeg 0.001039308 0.9985347 -0.04996838 0.02076884 0.5899999
+[
+C:\Users\Public\CubeStudio\ghoul\lowerLeftLeg.vox 9 0.5 9.5 lowerLeftLeg -0.04997917 0 0 0.9987503 0.99
+[
+]
+]
+]

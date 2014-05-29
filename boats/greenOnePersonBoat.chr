@@ -1,9 +1,9 @@
-C:\Users\Public\CubeStudio\boats\onePersonBoat.vox 0 0 0 rigid 0 0 0 1 0.99
+boats\onePersonBoat.vox 0 0 0 rigid 0 0 0 1 0.99
 [
-C:\Users\Public\CubeStudio\boats\paddle.vox 8.5 15.5 12.5 rigid -0.03423266 0.09378079 0.3411848 0.9346797 0.4899999
+boats\paddle.vox 8.5 15.5 12.5 rigid -0.03423266 0.09378079 0.3411848 0.9346797 0.4899999
 [
 ]
-C:\Users\Public\CubeStudio\boats\paddle.vox 14.5 15.5 12.5 rigid -0.04742948 0.01575955 0.9477989 0.3149284 0.5899999
+boats\paddle.vox 14.5 15.5 12.5 rigid -0.04742948 0.01575955 0.9477989 0.3149284 0.5899999
 [
 ]
 ]

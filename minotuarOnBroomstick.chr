@@ -1,33 +1,33 @@
-C:\Users\Public\CubeStudio\minotaur\body.vox 0 0 0 torso -0.4349656 0 0 0.9004471 0.99
+minotaur\body.vox 0 0 0 torso -0.4349656 0 0 0.9004471 0.99
 [
-C:\Users\Public\CubeStudio\minotaur\head.vox 32.5 49.5 32.5 head 0.3424693 0.01713775 -0.04694907 0.9381987 0.6899999
-[
-]
-C:\Users\Public\CubeStudio\minotaur\leftArm.vox 22.5 46.5 33.5 leftArm 0.2707042 -0.4955206 0.6465079 0.5130371 0.89
-[
-C:\Users\Public\CubeStudio\minotaur\lowerLeftArm.vox 3.5 14.5 14.5 lowerLeftArm 0.02950279 -0.2940439 0.09537452 0.9505639 1.09
+minotaur\head.vox 32.5 49.5 32.5 head 0.3424693 0.01713775 -0.04694907 0.9381987 0.6899999
 [
 ]
-]
-C:\Users\Public\CubeStudio\minotaur\rightArm.vox 42.5 46.5 33.5 rightArm 0.3188213 0.4660197 -0.6465078 0.513037 0.89
+minotaur\leftArm.vox 22.5 46.5 33.5 leftArm 0.2707042 -0.4955206 0.6465079 0.5130371 0.89
 [
-C:\Users\Public\CubeStudio\minotaur\lowerRightArm.vox 25.5 14.5 14.5 lowerRightArm 0.03697159 0.2446259 -0.1447925 0.9580327 1.09
+minotaur\lowerLeftArm.vox 3.5 14.5 14.5 lowerLeftArm 0.02950279 -0.2940439 0.09537452 0.9505639 1.09
 [
 ]
 ]
-C:\Users\Public\CubeStudio\minotaur\leftLeg.vox 29.5 31.5 33.5 leftLeg 0.2470948 0.01236505 -0.1447925 0.9580327 0.99
+minotaur\rightArm.vox 42.5 46.5 33.5 rightArm 0.3188213 0.4660197 -0.6465078 0.513037 0.89
 [
-C:\Users\Public\CubeStudio\minotaur\lowerLeftLeg.vox 14.5 1.5 14.5 lowerLeftLeg -0.5646425 0 0 0.8253356 0.99
-[
-]
-]
-C:\Users\Public\CubeStudio\minotaur\rightLeg.vox 35.5 31.5 33.5 rightLeg 0.2955202 -6.053714E-09 0.09537449 0.950564 0.99
-[
-C:\Users\Public\CubeStudio\minotaur\lowerRightLeg.vox 14.5 1.5 14.5 lowerRightLeg -0.5646425 0 0 0.8253356 0.99
+minotaur\lowerRightArm.vox 25.5 14.5 14.5 lowerRightArm 0.03697159 0.2446259 -0.1447925 0.9580327 1.09
 [
 ]
 ]
-C:\Users\Public\CubeStudio\vehicles\broomstick.vox 32.5 35.5 23.5 rigid 0.3250228 -0.6379724 -0.2920958 0.6340598 2.39
+minotaur\leftLeg.vox 29.5 31.5 33.5 leftLeg 0.2470948 0.01236505 -0.1447925 0.9580327 0.99
+[
+minotaur\lowerLeftLeg.vox 14.5 1.5 14.5 lowerLeftLeg -0.5646425 0 0 0.8253356 0.99
+[
+]
+]
+minotaur\rightLeg.vox 35.5 31.5 33.5 rightLeg 0.2955202 -6.053714E-09 0.09537449 0.950564 0.99
+[
+minotaur\lowerRightLeg.vox 14.5 1.5 14.5 lowerRightLeg -0.5646425 0 0 0.8253356 0.99
+[
+]
+]
+vehicles\broomstick.vox 32.5 35.5 23.5 rigid 0.3250228 -0.6379724 -0.2920958 0.6340598 2.39
 [
 ]
 ]

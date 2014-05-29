@@ -1,10 +1,10 @@
-C:\Users\Public\CubeStudio\pineTree\pineTreeTrunk.vox 0 0 0 rigid 0 0 0 1 0.99
+pineTree\pineTreeTrunk.vox 0 0 0 rigid 0 0 0 1 0.99
 [
-C:\Users\Public\CubeStudio\pineTree\pineTreeSection.vox 31.5 44 31.5 rigid 0 0 0 1 2.59
+pineTree\pineTreeSection.vox 31.5 44 31.5 rigid 0 0 0 1 2.59
 [
-C:\Users\Public\CubeStudio\pineTree\pineTreeSection.vox 3.5 5.5 3.5 rigid 0 0.7173561 0 0.6967068 0.79
+pineTree\pineTreeSection.vox 3.5 5.5 3.5 rigid 0 0.7173561 0 0.6967068 0.79
 [
-C:\Users\Public\CubeStudio\pineTree\pineTreeSection.vox 3.5 5.5 3.5 rigid 0 -3.944369E-08 0 1 0.7899999
+pineTree\pineTreeSection.vox 3.5 5.5 3.5 rigid 0 -3.944369E-08 0 1 0.7899999
 [
 ]
 ]

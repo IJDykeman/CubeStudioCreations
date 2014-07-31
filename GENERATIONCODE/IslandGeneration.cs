@@ -16,7 +16,7 @@ namespace IslandGame.GameWorld
 
     public override  void generateIsland(ChunkSpace chunkSpace, SetPieceManager setPieceManager, JobSiteManager jobSiteManager, IslandLocationProfile locationProfile)
     {
-     float magnitude = 1.0f;
+     float magnitude = 2.0f;
      float frequency = .02f;
      float persistance = .25f;
 
@@ -48,7 +48,7 @@ namespace IslandGame.GameWorld
                     //smoothConePurturbation+=.5f;
                     heightNormal =  smoothConePurturbation ;
                     heightNormal += 1;
-                    heightNormal *= 4;
+                    heightNormal *= 3;
 
                    // heightNormal *=3;
                   //  heightNormal =(float) Math.Pow(heightNormal,.1f);
@@ -57,7 +57,7 @@ namespace IslandGame.GameWorld
                    heightNormal = 1f/heightNormal;
 
                    heightNormal +=1;
-                    heightNormal = (float)Math.Pow(heightNormal,2f);
+                    heightNormal = (float)Math.Pow(heightNormal,1.5f);
                     heightNormal -=1;
 
                     heightNormal *= smoothedCone;
@@ -89,20 +89,29 @@ namespace IslandGame.GameWorld
                     }
 
 
-                    if (distFromCenter > radius)
-                    {
-                        //heightNormal = 0;
-                    }
+                    
 
                     float erosion = ((float)NoiseGenerator.Noise(z*2 + 644, x*2 + 455) + .5f) *.5f * centerCone;
                     heightNormal -= erosion/(heightNormal+2.0f);
-                    //heightNormal = (f`loat)Math.Pow(heightNormal, 1.3);
-                    heightNormal = (float)Math.Pow(heightNormal*ChunkSpace.chunkHeight,1.1f)/ChunkSpace.chunkHeight;
-                    heightNormal *=1.6f;
+   
 
-                    heightNormal -= ((float)NoiseGenerator.Noise(z*2 + 454, x*2 + 4445) + .5f) *.2f ;
+                    heightNormal *= 9;
+                    heightNormal = (int)heightNormal;
+                    heightNormal/=10;
+
+                    erosion = ((float)NoiseGenerator.Noise(z*4 + 345, x*4 + 5567) ) *.2f * (centerCone);
+                    heightNormal -= erosion;
+
+
+                    heightNormal = (float)Math.Pow(heightNormal*ChunkSpace.chunkHeight,.9f)/ChunkSpace.chunkHeight;
+                    heightNormal *=1.2f;
+
+                    //heightNormal -= ((float)NoiseGenerator.Noise(z*4 + 454, x*4 + 4445) + .5f) *.2f ;
+                    
+                    heightNormal+=.1f;
+
+                    //heightNormal should be done being set by now
                     int heightHere = (int)(heightNormal * ChunkSpace.chunkHeight);
-
                     for (int y = 0; y < ChunkSpace.chunkHeight; y++)
                     {
 
@@ -113,28 +122,28 @@ namespace IslandGame.GameWorld
                                 jobSiteManager.placeTree(
                                  new BlockLoc( locationProfile.profileSpaceToWorldSpace(
                                         new IntVector3(x, y, z).toVector3())),
-                                         Tree.treeTypes.pine);//
+                                         Tree.treeTypes.snowyPine);//
                             }
                         }
-
+//
                         if (heightHere > y  )
                         {
                             if(y<=1){
-                                chunkSpace.setBlockAt( 224, x, y, z);//beach area
+                                chunkSpace.setBlockAt( 37, x, y, z);//beach area
                             }
                             else{
                                 if(heightHere-1>y){
-                                    chunkSpace.setBlockAt( 2, x, y, z);
+                                    chunkSpace.setBlockAt( 34, x, y, z);
                                 }
                                 else{
 
                                     
-                                        if (rand.NextDouble() > .98)
+                                        if (rand.NextDouble() > .999)
                                         {
                                             setPieceManager.placeDecorativePlant(new BlockLoc(locationProfile.profileSpaceToWorldSpace(new IntVector3(x, y, z).toVector3())));
                                         }
 
-                                        chunkSpace.setBlockAt((y>2) ? (byte)193:(byte)192, x, y, z);
+                                        chunkSpace.setBlockAt((y>2) ? (byte)15:(byte)14, x, y, z);
                                     
 
                                }
@@ -155,22 +164,6 @@ namespace IslandGame.GameWorld
 
         }
     }
-
-
-
-
     }
 
-
-
 }
-
-/*
-
-
-
-
-
-
-
-*/

@@ -1,4 +1,4 @@
-minotaur\body.vox 0 -.2 0 torso 0 0 0 1 .0269
+minotaur\body.vox 0 -0.2 0 torso 0 0 0 1 0.0269
 [
 minotaur\head.vox 32.5 49.5 32.5 head 0 0 0 1 0.99
 [
@@ -26,5 +26,17 @@ minotaur\rightLeg.vox 35.5 31.5 33.5 rightLeg 0 0 0 1 0.99
 minotaur\lowerRightLeg.vox 14.5 1.5 14.5 lowerRightLeg 0 0 0 1 0.99
 [
 ]
+]
+C:\Users\Public\CubeStudioCreations\tools\ironShortsword.vox 37 45 39 rigid 0 0 0.9489848 0.3153224 0.99
+[
+]
+C:\Users\Public\CubeStudioCreations\tools\hammer.vox 38.5 34.5 33.5 rigid 0.9383453 0.1099798 -0.05116049 0.3237216 0.79
+[
+]
+C:\Users\Public\CubeStudioCreations\tools\ironPickaxe.vox 36 36.5 38.5 rigid 0.03887697 -0.09195267 0.3874729 0.9164595 0.99
+[
+]
+C:\Users\Public\CubeStudioCreations\tools\axe.vox 26.5 34.5 31.5 rigid 0.9244161 -0.08248004 -0.0009550947 0.3723597 0.79
+[
 ]
 ]

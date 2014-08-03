@@ -34,50 +34,62 @@ namespace IslandGame.GameWorld
             float distFromCenter = (float)Math.Sqrt(Math.Pow(radius - x, 2) + Math.Pow(ChunkSpace.chunkWidth * chunkSpace.widthInChunks / 2 - z, 2));
                     float ratioFromCenter = (radius - distFromCenter) / (radius); //increases farther out
                     float centerCone = 1.0f-ratioFromCenter;
-                    float heightNormal = (float)((float)NoiseGenerator.Noise(x, z)+.5f)/2.0f;
-                    
-                    heightNormal += (float)((float)NoiseGenerator.Noise(x, z) +.5f) / 2.0f;
+                    float heightNormal = (float)((float)Noise.Generate(x*.06f, z*.03f)+1f)/4.0f;
+                    heightNormal += (float)((float)Noise.Generate(x*.02f+4, z*.02f+7)+1f)/4.0f;
+
+
+                    heightNormal *= (float)Math.Pow(ratioFromCenter,.2);
+
+                    /*if(heightNormal>.3){
+                        heightNormal =1;
+                    }
+                    else{
+                        heightNormal = 0;
+                    }*/
+
+                    heightNormal += (float)((float)NoiseGenerator.Noise(x, z) +1f) / 4.0f;
+
+                    heightNormal = (float)Math.Pow((1.4f*heightNormal),91);
+
+                    float heightNormalFirstPass = heightNormal;
+
+                    if(heightNormal>.95){
+                        heightNormal = .95f;
+                    }
+
+                    heightNormal -= .06f;
+
+
 
 
                     
                     //heightNormal -= .3f*(1f-ratioFromCenter);
                     
-                    float smoothedCone =  1-((float)Math.Pow(centerCone,4f));
+                    /*float smoothedCone =  1-((float)Math.Pow(centerCone,4f));
                     smoothedCone = (float)MathHelper.Clamp(smoothedCone,.1f,1)+.03f;
                     float smoothConePurturbation = (float)((float)NoiseGenerator.Noise(x+903, z+455) +.5f);
                     //smoothConePurturbation+=.5f;
                     heightNormal =  smoothConePurturbation ;
-                    heightNormal += 1;
-                    heightNormal *= 3;
+                    //heightNormal += 1;
+                    //heightNormal *= 3;*/
 
-                   // heightNormal *=3;
-                  //  heightNormal =(float) Math.Pow(heightNormal,.1f);
-                  //  heightNormal /=3;
 
-                   heightNormal = 1f/heightNormal;
+
+                  /* heightNormal = 1f/heightNormal;
 
                    heightNormal +=1;
                     heightNormal = (float)Math.Pow(heightNormal,1.5f);
                     heightNormal -=1;
 
-                    heightNormal *= smoothedCone;
+                    heightNormal *= smoothedCone;*/
 
 
-                    float beachHeight = .02f;
-                    float lowBeachLimit = .1f;
-                    float highBeachLimit = .2f;//
-                    if(heightNormal<highBeachLimit && heightNormal>lowBeachLimit){
-                        heightNormal = beachHeight;
-                    }
-                    else  {
-                        heightNormal -= highBeachLimit-beachHeight;
-                        //heightNormal = (float)MathHelper.Clamp(heightNormal,.001f,1);
-                    }
-
-                    
 
 
                     
+
+
+                    /*
                     if(heightNormal>=highBeachLimit){
                         heightNormal *= 4.0f;
                         heightNormal = (float)Math.Round(heightNormal);
@@ -87,53 +99,76 @@ namespace IslandGame.GameWorld
                         //heightNormal/=10.0f;
                         //highBeachLimit+=beachHeight;
                     }
-
+                    */
 
                     
 
-                    float erosion = ((float)NoiseGenerator.Noise(z*2 + 644, x*2 + 455) + .5f) *.5f * centerCone;
-                    heightNormal -= erosion/(heightNormal+2.0f);
+                  //  float erosion = ((float)NoiseGenerator.Noise(z*2 + 644, x*2 + 455) + .5f) *.5f * centerCone;
+
    
 
-                    heightNormal *= 9;
-                    heightNormal = (int)heightNormal;
-                    heightNormal/=10;
+                  //  heightNormal *= 9;
+                  //  heightNormal = (int)heightNormal;
+                   // heightNormal/=10;
 
-                    erosion = ((float)NoiseGenerator.Noise(z*4 + 345, x*4 + 5567) ) *.2f * (centerCone);
-                    heightNormal -= erosion;
+                   // erosion = ((float)Noise.Generate((float)z*.05f, (float)x*.05f) +1)/2.0f *.06f * (centerCone);
+                  //  erosion = ((float)Noise.Generate((float)z*.03f, (float)x*.03f) +1)/2.0f *.05f * (centerCone);
+
+                   // heightNormal = MathHelper.Clamp(heightNormal,0,1);
+
+                    //heightNormal -= erosion/heightNormal;
+
+                   // heightNormal -= .05f;
 
 
-                    heightNormal = (float)Math.Pow(heightNormal*ChunkSpace.chunkHeight,.9f)/ChunkSpace.chunkHeight;
-                    heightNormal *=1.2f;
+                   
 
-                    //heightNormal -= ((float)NoiseGenerator.Noise(z*4 + 454, x*4 + 4445) + .5f) *.2f ;
-                    
-                    heightNormal+=.1f;
-
-                    //heightNormal should be done being set by now
+                    //heightNormal should be done being set by now----------------------------------
                     int heightHere = (int)(heightNormal * ChunkSpace.chunkHeight);
                     for (int y = 0; y < ChunkSpace.chunkHeight; y++)
                     {
+                        float yRatio = (float)y/(float)ChunkSpace.chunkHeight;
+
+                        if( (heightNormalFirstPass>.3 && heightNormalFirstPass<.8) &&
+                            Noise.Generate((float)x*.05f,(float)y*.05f,(float)z*.05f)<.0000001f){
+
+                            continue;
+                        }
+                        else{
+
+                        }
 
                         if (heightHere == y && y > 3)
                         {
                             if (rand.NextDouble() > .985)
                             {
-                                jobSiteManager.placeTree(
-                                 new BlockLoc( locationProfile.profileSpaceToWorldSpace(
-                                        new IntVector3(x, y, z).toVector3())),
-                                         Tree.treeTypes.snowyPine);//
+                                //jobSiteManager.placeTree(
+                                //new BlockLoc( locationProfile.profileSpaceToWorldSpace(
+                                //        new IntVector3(x, y, z).toVector3())),
+                                //         Tree.treeTypes.snowyPine);//
                             }
                         }
-//
-                        if (heightHere > y  )
+                        if (heightHere > y)
                         {
-                            if(y<=1){
-                                chunkSpace.setBlockAt( 37, x, y, z);//beach area
-                            }
-                            else{
+
                                 if(heightHere-1>y){
-                                    chunkSpace.setBlockAt( 34, x, y, z);
+
+                                    float stoneWaving = (float)(Noise.Generate(x*.01f,z*.01f)+1)/2.0f;
+                                    stoneWaving /= 18f;
+
+                                    byte layerColor = 54;
+                                    if(yRatio <.5+stoneWaving && yRatio > .3){
+                                        layerColor = 53;
+                                    }
+                                    else if(yRatio <.7+stoneWaving && yRatio > .6+stoneWaving){
+                                        layerColor = 51;
+                                    }
+                                    else if(yRatio <.73+stoneWaving && yRatio > .7+stoneWaving){
+                                        layerColor = 50;
+                                    }
+
+
+                                    chunkSpace.setBlockAt( layerColor, x, y, z);
                                 }
                                 else{
 
@@ -143,27 +178,25 @@ namespace IslandGame.GameWorld
                                             setPieceManager.placeDecorativePlant(new BlockLoc(locationProfile.profileSpaceToWorldSpace(new IntVector3(x, y, z).toVector3())));
                                         }
 
-                                        chunkSpace.setBlockAt((y>2) ? (byte)15:(byte)14, x, y, z);
+                                        chunkSpace.setBlockAt((y>2) ? (byte)57:(byte)56, x, y, z);
                                     
 
                                }
 
-                           }
+                           
 
                        }//
                        else if (y == 0)
                        {
                         chunkSpace.setBlockAt(PaintedCubeSpace.AIR, x, y, z);
 
-                    }
+                        }
+                    
+                }
                 }
 
-
-
             }
-
         }
-    }
     }
 
 }
